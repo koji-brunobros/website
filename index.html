@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>株式会社ブローノブラザーズ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">
+                <img src="logo.png" alt="株式会社ブローノブラザーズ">
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">会社情報</a></li>
+                    <li><a href="#business">事業内容</a></li>
+                    <li><a href="#contact">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>農業とテクノロジーで未来を創る</h2>
+            <p>農業経営から最新のAI・IoT技術まで、総合的なソリューションを提供します</p>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">会社情報</h2>
+            
+            <div class="company-info">
+                <table class="info-table">
+                    <tr>
+                        <th>会社名</th>
+                        <td>株式会社ブローノブラザーズ</td>
+                    </tr>
+                    <tr>
+                        <th>設立</th>
+                        <td>令和7年10月6日</td>
+                    </tr>
+                    <tr>
+                        <th>資本金</th>
+                        <td>100万円</td>
+                    </tr>
+                    <tr>
+                        <th>所在地</th>
+                        <td>〒101-0044<br>東京都千代田区鍛冶町一丁目10番6号 BIZSMART神田</td>
+                    </tr>
+                    <tr>
+                        <th>代表取締役</th>
+                        <td>山本 浩司</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="business" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">事業内容</h2>
+            
+            <div class="business-list">
+                <div class="business-item">
+                    <div class="business-number">01</div>
+                    <div class="business-content">
+                        <h3>農業経営コンサルティング</h3>
+                        <p>農業経営に関する専門的なコンサルティングサービスを提供します。</p>
+                    </div>
+                </div>
+
+                <div class="business-item">
+                    <div class="business-number">02</div>
+                    <div class="business-content">
+                        <h3>AI・データ活用サービス</h3>
+                        <p>AIやデータを活用した農業支援サービスの企画・開発・運営を行います。</p>
+                    </div>
+                </div>
+
+                <div class="business-item">
+                    <div class="business-number">03</div>
+                    <div class="business-content">
+                        <h3>農産物流通</h3>
+                        <p>農産物及び加工品の仕入、販売、卸売、輸出入並びにEC運営を行います。</p>
+                    </div>
+                </div>
+
+                <div class="business-item">
+                    <div class="business-number">04</div>
+                    <div class="business-content">
+                        <h3>イベント企画・運営</h3>
+                        <p>農業関連イベント（セミナー、マルシェ、体験等）の企画・運営及び受託を行います。</p>
+                    </div>
+                </div>
+
+                <div class="business-item">
+                    <div class="business-number">05</div>
+                    <div class="business-content">
+                        <h3>IoT・ドローン導入支援</h3>
+                        <p>IoT機器・ドローン等の導入支援、販売、貸賃及び保守サービスを提供します。</p>
+                    </div>
+                </div>
+
+                <div class="business-item">
+                    <div class="business-number">06</div>
+                    <div class="business-content">
+                        <h3>デジタルマーケティング</h3>
+                        <p>広告、ブランディング、販売促進、デジタルマーケティングの企画、制作、代理及び運営を行います。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">お問い合わせ</h2>
+            <div class="contact-info">
+                <p>お気軽にお問い合わせください。</p>
+                
+                <div class="contact-form-wrapper">
+                    <form id="contactForm" action="https://formsubmit.co/contact@brunobros.co.jp" method="POST">
+                        <!-- FormSubmit設定 -->
+                        <input type="hidden" name="_subject" value="コーポレートサイトからのお問い合わせ">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        
+                        <div class="form-group">
+                            <label for="name">お名前 <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">メールアドレス <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">会社名・組織名</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">電話番号</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">お問い合わせ種別 <span class="required">*</span></label>
+                            <select id="subject" name="subject" required>
+                                <option value="">選択してください</option>
+                                <option value="サービスについて">サービスについて</option>
+                                <option value="お見積り依頼">お見積り依頼</option>
+                                <option value="その他">その他</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">お問い合わせ内容 <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">送信する</button>
+                    </form>
+                </div>
+                
+                <div class="contact-details">
+                    <p><strong>株式会社ブローノブラザーズ</strong></p>
+                    <p>〒101-0044<br>
+                    東京都千代田区鍛冶町一丁目10番6号 BIZSMART神田</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 株式会社ブローノブラザーズ All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
